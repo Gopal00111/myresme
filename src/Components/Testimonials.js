@@ -1,18 +1,7 @@
 import React from "react";
 
 const Testimonials = ({ data }) => {
-  if (data) {
-    var testimonials = data.testimonials.map(function (testimonials) {
-      return (
-        <li key={testimonials.user}>
-          <blockquote>
-            <p>{testimonials.text}</p>
-            <cite>{testimonials.user}</cite>
-          </blockquote>
-        </li>
-      );
-    });
-  }
+
 
   return (
     <section id="testimonials">
@@ -25,7 +14,7 @@ const Testimonials = ({ data }) => {
           </div>
 
           <div className="ten columns flex-container">
-            <ul className="slides">{testimonials}</ul>
+            <ul className="slides"></ul>
           </div>
         </div>
       </div>
